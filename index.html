@@ -42,52 +42,132 @@
     });
   </script>
 </td>
-     <td><img src="https://i.pinimg.com/736x/77/bd/f7/77bdf749a26909ddf20cafd7a357ed19.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  LOUIS VITTON <br>  PRIX: 8500DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br><a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-        
-    </td>
-    <td><img src="https://i.pinimg.com/1200x/9f/f9/7e/9ff97ec23243c435e9c6f3b7c8f6e820.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  DIOR  <br>  PRIX: 9500DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-    <td><img src= "https://i.pinimg.com/736x/e6/33/36/e63336d9c3ea6fcdede6340d2b5b1122.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  FENDI  <br>  PRIX: 9500DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
+     <td>
+  <img src="https://i.pinimg.com/736x/77/bd/f7/77bdf749a26909ddf20cafd7a357ed19.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-2">COLLECTION LOUIS VITTON</span> <br>
+  <span id="product-price-2">8500DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-2">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-2">ACHETER</button>
+  
+  <script>
+    const button2 = document.getElementById("buy-button-2");
+    button2.addEventListener("click", function() {
+        const name = document.getElementById("product-name-2").innerText;
+        const price = document.getElementById("product-price-2").innerText;
+        const color = document.getElementById("product-color-2").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+    <td>
+  <img src="https://i.pinimg.com/1200x/9f/f9/7e/9ff97ec23243c435e9c6f3b7c8f6e820.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-3">COLLECTION DIOR</span> <br>
+  <span id="product-price-3">9500DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-3">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-3">ACHETER</button>
+  
+  <script>
+    const button3 = document.getElementById("buy-button-3");
+    button3.addEventListener("click", function() {
+        const name = document.getElementById("product-name-3").innerText;
+        const price = document.getElementById("product-price-3").innerText;
+        const color = document.getElementById("product-color-3").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+   <td>
+  <img src="https://i.pinimg.com/736x/e6/33/36/e63336d9c3ea6fcdede6340d2b5b1122.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-4">COLLECTION FENDI</span> <br>
+  <span id="product-price-4">9500DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-4">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-4">ACHETER</button>
+  
+  <script>
+    const button4 = document.getElementById("buy-button-4");
+    button4.addEventListener("click", function() {
+        const name = document.getElementById("product-name-4").innerText;
+        const price = document.getElementById("product-price-4").innerText;
+        const color = document.getElementById("product-color-4").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
   </tr>
   <tr>
-    <td><img src="https://i.pinimg.com/736x/ef/1f/0a/ef1f0a5cdb01870137a7e3fb89683ebc.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION GCUUI<br>  PRIX: 12000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
+    <td>
+  <img src="https://i.pinimg.com/736x/ef/1f/0a/ef1f0a5cdb01870137a7e3fb89683ebc.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-5">COLLECTION GCUUI</span> <br>
+  <span id="product-price-5">12000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-5">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-5">ACHETER</button>
+  
+  <script>
+    const button5 = document.getElementById("buy-button-5");
+    button5.addEventListener("click", function() {
+        const name = document.getElementById("product-name-5").innerText;
+        const price = document.getElementById("product-price-5").innerText;
+        const color = document.getElementById("product-color-5").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
         <td><img src="https://i.pinimg.com/1200x/b1/8f/9e/b18f9eeb1047ee0a9c48698cc8265a97.jpg" alt="Bag" 
      style="width: 250px; height: auto;" > <br>  COLLECTION LOUIS VITTON <br>  PRIX: 10000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
         >
@@ -98,160 +178,419 @@
   ACHETER
 </a> 
     </td>
-        <td><img src="https://i.pinimg.com/1200x/bb/8c/02/bb8c02e3c26fd45b8f68bb14fedc3a88.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION DIOR  <br>  PRIX: 12000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br><a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a> </td> 
-    </td>
-    <td><img src="https://i.pinimg.com/1200x/38/f4/05/38f405eb761e86da6e1ac2a9f93ba22f.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION FENDI  <br>  PRIX: 16000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br> <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
+        <td>
+  <img src="https://i.pinimg.com/1200x/bb/8c/02/bb8c02e3c26fd45b8f68bb14fedc3a88.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-6">COLLECTION DIOR</span> <br>
+  <span id="product-price-6">12000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-6">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-6">ACHETER</button>
+  
+  <script>
+    const button6 = document.getElementById("buy-button-6");
+    button6.addEventListener("click", function() {
+        const name = document.getElementById("product-name-6").innerText;
+        const price = document.getElementById("product-price-6").innerText;
+        const color = document.getElementById("product-color-6").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+    <td>
+  <img src="https://i.pinimg.com/1200x/38/f4/05/38f405eb761e86da6e1ac2a9f93ba22f.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-7">COLLECTION FENDI</span> <br>
+  <span id="product-price-7">16000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-7">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-7">ACHETER</button>
+  
+  <script>
+    const button7 = document.getElementById("buy-button-7");
+    button7.addEventListener("click", function() {
+        const name = document.getElementById("product-name-7").innerText;
+        const price = document.getElementById("product-price-7").innerText;
+        const color = document.getElementById("product-color-7").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
   </tr>
   <tr>
-    <td><img src="https://i.pinimg.com/1200x/ae/4d/46/ae4d465e6236e8ace417265c562b273f.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION HERMESI <br> PRIX: 15000DA <br>  COULEUR DISPONIBLE: <select name ="COULEUR DISPONIBLE">
-<option value=" BEIGE"> BEIGE </option>
-<option value="NOIR"> NOIR</option>
-<option value="BLANC"> BLANC</option>
-     </select> <br> <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-     </td>
-     <td><img src="https://i.pinimg.com/1200x/b5/b3/d9/b5b3d9bec346df49270e57a8025ee6cb.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  VALENTINO <br>  PRIX: 17000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-    <td><img src="https://i.pinimg.com/1200x/9f/f9/7e/9ff97ec23243c435e9c6f3b7c8f6e820.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  DIOR  <br>  PRIX: 9500DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-    <td><img src= "https://i.pinimg.com/736x/e6/33/36/e63336d9c3ea6fcdede6340d2b5b1122.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  FENDI  <br>  PRIX: 9500DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
+    <td>
+  <img src="https://i.pinimg.com/1200x/ae/4d/46/ae4d465e6236e8ace417265c562b273f.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-8">COLLECTION HERMESI</span> <br>
+  <span id="product-price-8">15000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-8">
+    <option value="BEIGE">BEIGE</option>
+    <option value="NOIR">NOIR</option>
+    <option value="BLANC">BLANC</option>
+  </select> <br>
+
+  <button id="buy-button-8">ACHETER</button>
+  
+  <script>
+    const button8 = document.getElementById("buy-button-8");
+    button8.addEventListener("click", function() {
+        const name = document.getElementById("product-name-8").innerText;
+        const price = document.getElementById("product-price-8").innerText;
+        const color = document.getElementById("product-color-8").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+    
+   <td>
+  <img src="https://i.pinimg.com/1200x/9f/f9/7e/9ff97ec23243c435e9c6f3b7c8f6e820.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-9">COLLECTION DIOR</span> <br>
+  <span id="product-price-9">9500DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-9">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-9">ACHETER</button>
+  
+  <script>
+    const button9 = document.getElementById("buy-button-9");
+    button9.addEventListener("click", function() {
+        const name = document.getElementById("product-name-9").innerText;
+        const price = document.getElementById("product-price-9").innerText;
+        const color = document.getElementById("product-color-9").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+   <td>
+  <img src="https://i.pinimg.com/736x/e6/33/36/e63336d9c3ea6fcdede6340d2b5b1122.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-10">COLLECTION FENDI</span> <br>
+  <span id="product-price-10">9500DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-10">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-10">ACHETER</button>
+  
+  <script>
+    const button10 = document.getElementById("buy-button-10");
+    button10.addEventListener("click", function() {
+        const name = document.getElementById("product-name-10").innerText;
+        const price = document.getElementById("product-price-10").innerText;
+        const color = document.getElementById("product-color-10").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td> 
   </tr>
   <tr>
-    <td><img src="https://i.pinimg.com/736x/64/1c/c1/641cc1511ac6098b0453c31b4f62cc87.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  LOUIS VITTON <br>  PRIX: 12000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-        <td><img src="https://i.pinimg.com/1200x/b1/8f/9e/b18f9eeb1047ee0a9c48698cc8265a97.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION LOUIS VITTON <br>  PRIX: 10000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br> <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-    </td>
-        <td><img src="https://i.pinimg.com/736x/55/e9/c2/55e9c2138cb38bb13cd55894d58afee4.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION HERMES  <br>  PRIX: 12000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br> <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-    <td><img src="https://i.pinimg.com/1200x/c5/2f/f2/c52ff2e5c0129f440a100d3ec0084127.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION HERMES  <br>  PRIX: 11000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        <option value="MARRON"> MARRON</option>
-        </select> <br> <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
+    <td>
+  <img src="https://i.pinimg.com/736x/64/1c/c1/641cc1511ac6098b0453c31b4f62cc87.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-11">COLLECTION LOUIS VITTON</span> <br>
+  <span id="product-price-11">12000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-11">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-11">ACHETER</button>
+  
+  <script>
+    const button11 = document.getElementById("buy-button-11");
+    button11.addEventListener("click", function() {
+        const name = document.getElementById("product-name-11").innerText;
+        const price = document.getElementById("product-price-11").innerText;
+        const color = document.getElementById("product-color-11").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+       
+    <td>
+  <img src="https://i.pinimg.com/1200x/b1/8f/9e/b18f9eeb1047ee0a9c48698cc8265a97.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-12">COLLECTION LOUIS VITTON</span> <br>
+  <span id="product-price-12">10000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-12">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-12">ACHETER</button>
+  
+  <script>
+    const button12 = document.getElementById("buy-button-12");
+    button12.addEventListener("click", function() {
+        const name = document.getElementById("product-name-12").innerText;
+        const price = document.getElementById("product-price-12").innerText;
+        const color = document.getElementById("product-color-12").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+       <td>
+  <img src="https://i.pinimg.com/736x/55/e9/c2/55e9c2138cb38bb13cd55894d58afee4.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-13">COLLECTION HERMES</span> <br>
+  <span id="product-price-13">12000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-13">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-13">ACHETER</button>
+  
+  <script>
+    const button13 = document.getElementById("buy-button-13");
+    button13.addEventListener("click", function() {
+        const name = document.getElementById("product-name-13").innerText;
+        const price = document.getElementById("product-price-13").innerText;
+        const color = document.getElementById("product-color-13").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+    <td>
+  <img src="https://i.pinimg.com/1200x/c5/2f/f2/c52ff2e5c0129f440a100d3ec0084127.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-14">COLLECTION HERMES</span> <br>
+  <span id="product-price-14">11000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-14">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+    <option value="MARRON">MARRON</option>
+  </select> <br>
+
+  <button id="buy-button-14">ACHETER</button>
+  
+  <script>
+    const button14 = document.getElementById("buy-button-14");
+    button14.addEventListener("click", function() {
+        const name = document.getElementById("product-name-14").innerText;
+        const price = document.getElementById("product-price-14").innerText;
+        const color = document.getElementById("product-color-14").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
   </tr>
    <tr>
-    <td><img src="https://i.pinimg.com/1200x/a8/fa/ee/a8faee613e9f9c701cf34195cc9900de.jpg"  alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  LOUIS VITTON <br>  PRIX: 12000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br>
-        <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-        <td><img src="https://i.pinimg.com/736x/b4/01/8c/b4018c9264b19d43e8cc0df8581bce9f.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION  JACOUEMUS <br>  PRIX: 10000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br> <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-    </td>
-        <td><img src="https://i.pinimg.com/1200x/26/8a/51/268a510a2b82f2d753a206a163cd786b.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION CHANEL  <br>  PRIX: 12000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br><a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a>
-    </td>
-    <td><img src="https://i.pinimg.com/1200x/8d/38/ae/8d38ae07d9e9436feaf0f3fc6d1c2f69.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION DOLCE & GABANA   <br>  PRIX: 8500DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        <option value="MARRON"> MARRON</option>
-        </select> <br> <a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA%20COLLECTION%20 DOLCE%20 %20& %20GABANA" target="_blank">
-  ACHETER
-</a>
-    </td>
+    <td>
+  <img src="https://i.pinimg.com/1200x/a8/fa/ee/a8faee613e9f9c701cf34195cc9900de.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-15">COLLECTION LOUIS VITTON</span> <br>
+  <span id="product-price-15">12000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-15">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-15">ACHETER</button>
+  
+  <script>
+    const button15 = document.getElementById("buy-button-15");
+    button15.addEventListener("click", function() {
+        const name = document.getElementById("product-name-15").innerText;
+        const price = document.getElementById("product-price-15").innerText;
+        const color = document.getElementById("product-color-15").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+       <td>
+  <img src="https://i.pinimg.com/736x/b4/01/8c/b4018c9264b19d43e8cc0df8581bce9f.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-16">COLLECTION JACQUEMUS</span> <br>
+  <span id="product-price-16">10000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-16">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-16">ACHETER</button>
+  
+  <script>
+    const button16 = document.getElementById("buy-button-16");
+    button16.addEventListener("click", function() {
+        const name = document.getElementById("product-name-16").innerText;
+        const price = document.getElementById("product-price-16").innerText;
+        const color = document.getElementById("product-color-16").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+        <td>
+  <img src="https://i.pinimg.com/1200x/26/8a/51/268a510a2b82f2d753a206a163cd786b.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-17">COLLECTION CHANEL</span> <br>
+  <span id="product-price-17">12000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-17">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-17">ACHETER</button>
+  
+  <script>
+    const button17 = document.getElementById("buy-button-17");
+    button17.addEventListener("click", function() {
+        const name = document.getElementById("product-name-17").innerText;
+        const price = document.getElementById("product-price-17").innerText;
+        const color = document.getElementById("product-color-17").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+    <td>
+  <img src="https://i.pinimg.com/1200x/8d/38/ae/8d38ae07d9e9436feaf0f3fc6d1c2f69.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-18">COLLECTION DOLCE & GABBANA</span> <br>
+  <span id="product-price-18">8500DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-18">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+    <option value="MARRON">MARRON</option>
+  </select> <br>
+
+  <button id="buy-button-18">ACHETER</button>
+  
+  <script>
+    const button18 = document.getElementById("buy-button-18");
+    button18.addEventListener("click", function() {
+        const name = document.getElementById("product-name-18").innerText;
+        const price = document.getElementById("product-price-18").innerText;
+        const color = document.getElementById("product-color-18").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
   </tr>
 
 
