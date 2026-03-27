@@ -8,13 +8,18 @@
     <body>
 <table border="1" >
   <tr>
-    <td>
-  <img src="https://i.pinimg.com/736x/64/c1/78/64c17862f4dce82cb419d2f3a87a9ab0.jpg"  alt="Bag" 
+   <td>
+  <!-- الصورة تاع الشنطة -->
+  <img src="https://i.pinimg.com/736x/64/c1/78/64c17862f4dce82cb419d2f3a87a9ab0.jpg" alt="Bag" 
        style="width: 250px; height: auto;" > <br>
   
+  <!-- اسم المنتج -->
   <span id="product-name">COLLECTION GCUUI</span> <br>
+  
+  <!-- سعر المنتج -->
   <span id="product-price">14500DA</span> <br>
   
+  <!-- قائمة اختيار اللون -->
   COULEUR DISPONIBLE: 
   <select id="product-color">
     <option value="BEIGE">BEIGE</option>
@@ -22,22 +27,34 @@
     <option value="BLANC">BLANC</option>
   </select> <br>
 
+  <!-- زر الشراء -->
   <button id="buy-button">ACHETER</button>
   
   <script>
+    // 1️⃣ هذا السطر يربط الزر بالوظيفة
     const button = document.getElementById("buy-button");
+
+    // 2️⃣ عند الضغط على الزر
     button.addEventListener("click", function() {
+        // 3️⃣ جلب اسم المنتج
         const name = document.getElementById("product-name").innerText;
+        
+        // 4️⃣ جلب السعر
         const price = document.getElementById("product-price").innerText;
+        
+        // 5️⃣ جلب اللون المختار
         const color = document.getElementById("product-color").value;
+        
+        // 6️⃣ رابط الصورة تاع المنتج
+        const image = "https://i.pinimg.com/736x/64/c1/78/64c17862f4dce82cb419d2f3a87a9ab0.jpg";
 
-        // نص الرسالة لي تروح لواتساب
-        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+        // 7️⃣ نص الرسالة لي تروح لواتساب
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color} - Voir la photo: ${image}`;
 
-        // رقم واتساب بصيغة دولية
+        // 8️⃣ رقم واتساب بصيغة دولية
         const phone = "213558939466";
 
-        // فتح واتساب في تاب جديد
+        // 9️⃣ فتح واتساب في تاب جديد مع النص
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
     });
   </script>
