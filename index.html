@@ -8,18 +8,13 @@
     <body>
 <table border="1" >
   <tr>
-   <td>
-  <!-- الصورة تاع الشنطة -->
-  <img src="https://i.pinimg.com/736x/64/c1/78/64c17862f4dce82cb419d2f3a87a9ab0.jpg" alt="Bag" 
+    <td>
+  <img src="https://i.pinimg.com/736x/64/c1/78/64c17862f4dce82cb419d2f3a87a9ab0.jpg"  alt="Bag" 
        style="width: 250px; height: auto;" > <br>
   
-  <!-- اسم المنتج -->
   <span id="product-name">COLLECTION GCUUI</span> <br>
-  
-  <!-- سعر المنتج -->
   <span id="product-price">14500DA</span> <br>
   
-  <!-- قائمة اختيار اللون -->
   COULEUR DISPONIBLE: 
   <select id="product-color">
     <option value="BEIGE">BEIGE</option>
@@ -27,34 +22,22 @@
     <option value="BLANC">BLANC</option>
   </select> <br>
 
-  <!-- زر الشراء -->
   <button id="buy-button">ACHETER</button>
   
   <script>
-    // 1️⃣ هذا السطر يربط الزر بالوظيفة
     const button = document.getElementById("buy-button");
-
-    // 2️⃣ عند الضغط على الزر
     button.addEventListener("click", function() {
-        // 3️⃣ جلب اسم المنتج
         const name = document.getElementById("product-name").innerText;
-        
-        // 4️⃣ جلب السعر
         const price = document.getElementById("product-price").innerText;
-        
-        // 5️⃣ جلب اللون المختار
         const color = document.getElementById("product-color").value;
-        
-        // 6️⃣ رابط الصورة تاع المنتج
-        const image = "https://i.pinimg.com/736x/64/c1/78/64c17862f4dce82cb419d2f3a87a9ab0.jpg";
 
-        // 7️⃣ نص الرسالة لي تروح لواتساب
-        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color} - Voir la photo: ${image}`;
+        // نص الرسالة لي تروح لواتساب
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
 
-        // 8️⃣ رقم واتساب بصيغة دولية
+        // رقم واتساب بصيغة دولية
         const phone = "213558939466";
 
-        // 9️⃣ فتح واتساب في تاب جديد مع النص
+        // فتح واتساب في تاب جديد
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
     });
   </script>
@@ -185,16 +168,38 @@
     });
   </script>
 </td>
-        <td><img src="https://i.pinimg.com/1200x/b1/8f/9e/b18f9eeb1047ee0a9c48698cc8265a97.jpg" alt="Bag" 
-     style="width: 250px; height: auto;" > <br>  COLLECTION LOUIS VITTON <br>  PRIX: 10000DA <br> COULEUR DISPONIBLE : <select name ="COULEUR DISPONIBLE>"
-        >
-        <option value="BEIGE">  BEIGE</option>
-        <option value="BLANC"> BLANC</option>
-        <option value="NOIR"> NOIR</option>
-        </select> <br><a href="https://wa.me/213558939466?text=Salut,%20je%20veux%20acheter%20le%20sac%20ALMASA" target="_blank">
-  ACHETER
-</a> 
-    </td>
+      <td>
+  <img src="https://i.pinimg.com/1200x/b1/8f/9e/b18f9eeb1047ee0a9c48698cc8265a97.jpg" alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-2">COLLECTION LOUIS VITTON</span> <br>
+  <span id="product-price-2">10000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-2">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-2">ACHETER</button>
+  
+  <script>
+    const button2 = document.getElementById("buy-button-2");
+    button2.addEventListener("click", function() {
+        const name = document.getElementById("product-name-2").innerText;
+        const price = document.getElementById("product-price-2").innerText;
+        const color = document.getElementById("product-color-2").value;
+
+        // رسالة WhatsApp بدون رابط الصورة
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td> 
         <td>
   <img src="https://i.pinimg.com/1200x/bb/8c/02/bb8c02e3c26fd45b8f68bb14fedc3a88.jpg" alt="Bag" 
        style="width: 250px; height: auto;" > <br>
@@ -263,7 +268,7 @@
   <img src="https://i.pinimg.com/1200x/ae/4d/46/ae4d465e6236e8ace417265c562b273f.jpg"  alt="Bag" 
        style="width: 250px; height: auto;" > <br>
   
-  <span id="product-name-8">COLLECTION HERMESI</span> <br>
+  <span id="product-name-8">COLLECTION HERMES</span> <br>
   <span id="product-price-8">15000DA</span> <br>
   
   COULEUR DISPONIBLE: 
@@ -292,7 +297,7 @@
 </td>
     
    <td>
-  <img src="https://i.pinimg.com/1200x/9f/f9/7e/9ff97ec23243c435e9c6f3b7c8f6e820.jpg"  alt="Bag" 
+  <img src="https://i.pinimg.com/1200x/da/86/fb/da86fbfb2267b492e3f582e043b8bb0c.jpg"  alt="Bag" 
        style="width: 250px; height: auto;" > <br>
   
   <span id="product-name-9">COLLECTION DIOR</span> <br>
@@ -323,7 +328,7 @@
   </script>
 </td>
    <td>
-  <img src="https://i.pinimg.com/736x/e6/33/36/e63336d9c3ea6fcdede6340d2b5b1122.jpg"  alt="Bag" 
+  <img src="https://i.pinimg.com/736x/e0/a2/6e/e0a26e6367852f6508a22cb55fb836ef.jpg"  alt="Bag" 
        style="width: 250px; height: auto;" > <br>
   
   <span id="product-name-10">COLLECTION FENDI</span> <br>
@@ -353,6 +358,38 @@
     });
   </script>
 </td> 
+<td>
+  <img src="https://i.pinimg.com/1200x/2c/c4/ad/2cc4ad2bcdc15c8509479c78169f2bb9.jpg"  alt="Bag" 
+       style="width: 250px; height: auto;" > <br>
+  
+  <span id="product-name-10">COLLECTION CHANEL</span> <br>
+  <span id="product-price-10">11000DA</span> <br>
+  
+  COULEUR DISPONIBLE: 
+  <select id="product-color-10">
+    <option value="BEIGE">BEIGE</option>
+    <option value="BLANC">BLANC</option>
+    <option value="NOIR">NOIR</option>
+  </select> <br>
+
+  <button id="buy-button-10">ACHETER</button>
+  
+  <script>
+    const button10 = document.getElementById("buy-button-10");
+    button10.addEventListener("click", function() {
+        const name = document.getElementById("product-name-10").innerText;
+        const price = document.getElementById("product-price-10").innerText;
+        const color = document.getElementById("product-color-10").value;
+
+        const message = `Salut, je veux acheter ${name} - Prix: ${price} - Couleur: ${color}`;
+
+        const phone = "213558939466";
+
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+  </script>
+</td>
+
   </tr>
   <tr>
     <td>
